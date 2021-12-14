@@ -1,0 +1,29 @@
+//Template Colors
+//Можно добавлять цвета из темы
+$white: #FFFFFF;
+$opacity-white: rgba(255, 255, 255, 0.2);
+$black: #000000;
+$dark: #131314;
+$green-blue: #0AD9C6;
+$green-blue-hover: #089c8e;
+$grey: #C9CCD4;
+$background-white: #F6F7F9;
+
+
+//Template breakpoints
+$mobile-width: 320px;
+$mobile-width-max: 575px;
+$tablet-width: 767px;
+$desktop-width: 1023px;
+$desktop-width-max: 1126px;
+
+//Template retina media
+$retina-dpi: 144dpi;
+$retina-dppx: 2dppx;
+
+
+//Template Fonts for BODY
+$main-fonts: "Open-Sans", "Arial", sans-serif;
+$sec-fonts: "Open-Sans", "Arial", sans-serif;
+$main-font-size: 17px;
+$main-font-weight: 500;

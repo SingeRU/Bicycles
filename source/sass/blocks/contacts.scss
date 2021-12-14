@@ -1,0 +1,99 @@
+.contacts {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 41px;
+
+    margin-top: 36px;
+}
+
+.contacts-mail {
+    grid-column: 5/6
+}
+
+.contacts-tel {
+    grid-column: 7/10;
+}
+
+.contacts-mail,
+.contacts-tel {
+    text-decoration: none;
+
+    position: relative;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $black;
+    opacity: 0.5;
+
+    
+    &:hover {
+        transition: 0.3s;
+        opacity: 0.7;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.contacts-mail::before,
+.contacts-tel::before {
+    content: "";
+    position: absolute;
+}
+
+.contacts-mail::before {
+    background: url("../../img/mail.svg");
+    width: 26px;
+    height: 20px;
+    left: -42px;
+    top: 2px;
+}
+
+.contacts-tel::before {
+    background: url("../../img/phone.svg");
+    left: -37px;
+    top: -2px;
+
+    width: 22px;
+    height: 23px;
+}
+
+
+@media (max-width: $desktop-width) {
+    .contacts {
+        column-gap: 0;
+    }
+
+    .contacts-mail {
+        grid-column: 3/5;
+        margin-left: 19px;
+    }
+
+    .contacts-tel {
+        grid-column: 8/12;
+        margin-left: 51px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts-mail {
+        margin-left: 48px;
+    }
+
+    .contacts-tel {
+        margin-left: 24px;
+        margin-top: 24px;
+    }
+}
