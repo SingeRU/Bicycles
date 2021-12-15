@@ -15,6 +15,10 @@
 
 }
 
+.page-header__toggle {
+    display: none;
+}
+
 .page-header__list {
     list-style: none;
     margin: 0;
@@ -45,7 +49,6 @@
 }
 
 .page-header__link {
-
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -76,6 +79,117 @@
     }
 
     .page-header__nav {
+        position: relative;
+        padding: 0;
+    }
+
+
+    .page-header__list {
+        display: none;
+        &::after {
+            display: none;
+        }
+    }
+
+    .page-header__list--nojs {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: $white;
+        
+        width: 100%;
+    }
+
+    .page-header__list--closed {
+        display: none;
+    }
+
+    .page-header__list--opened {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 320px;
+        height: 568px;
+        justify-content: flex-start;
+
+        padding-top: 98px;
+        gap: 27px;
+
+        background-color: $white;
+
+        position: absolute;
+        right: 0;
+        z-index: 10;
+
+        box-shadow: 0px 0px 10px $black;
+    }
+
+    .page-header__list--nojs li,
+    .page-header__list--opened li {
+        background-color: $background-grey;
+        width: 100%;
+
+        padding: 19px 0 16px 16px;
+
+        text-align: left;
+    }
+
+    .page-header__list--nojs a,
+    .page-header__list--opened a {
+        display: block;
+        width: 100%;
+        color: $text-dark;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: left;
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    .page-header__toggle {
+        display: block;
+
+        border: none;
+        position: absolute;
+        background-color: $green-blue;
+        width: 52px;
+        height: 50px;
+        right: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            box-shadow: 0;
+            background: url("../../img/close.svg");
+            background-color: $white;
+            width: 22px;
+            height: 23px;
+            z-index: 11;
+            top: 14px;
+            right: 14px;
+        }
+    }
+
+    .page-header__toggle--closed {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 19px;
+            left: 14px;
+            width: 22.5px;
+            height: 1px;
+            background-color: $black;
+            box-shadow: 0 7px 0 0 $black, 0 13px 0 0 $black;
+        }
+    }
+
+
+    .page-header__toggle--nojs {
         display: none;
     }
 
