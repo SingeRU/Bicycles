@@ -13,7 +13,7 @@
   <header class="page-header">
     <div class="container">
       <nav class="page-header__nav">
-        <button class="page-header__toggle page-header__toggle--nojs page-header__toggle--closed" type="button" name="button"></button>
+        <button class="page-header__toggle page-header__toggle--nojs page-header__toggle--closed" type="button" aria-label="Toggle Button"></button>
         <ul class="page-header__list page-header__list--nojs page-header__list--closed">
           <li class="page-header__item"><a class="page-header__link" href="#">О нас</a></li>
           <li class="page-header__item"><a class="page-header__link" href="#">Виды велосипедов</a></li>
@@ -33,12 +33,12 @@
         <form class="promo-form" action="https://echo.htmlacademy.ru/" method="post">
           <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <label>
-            <input type="text" placeholder="Введите Ваше Имя" name="data">
+            <input type="text" placeholder="Введите Ваше Имя" aria-label="data">
           </label>
           <label>
-            <input type="tel" placeholder="Введите Ваш номер телефона" name="phone">
+            <input type="tel" placeholder="Введите Ваш номер телефона" aria-label="phone">
           </label> 
-          <button type="submit" name="button">Подобрать велосипед мечты</button>
+          <button type="submit" aria-label="Choose Bicycle">Подобрать велосипед мечты</button>
         </form>
       </div>
     </div>  
@@ -69,15 +69,15 @@
       <h2 class="types-title">Виды велосипедов</h2>
       <ul class="types-list">
         <li class="types-list__item types-list__item--road">
-          <img src="img/road-bike.jpg" alt="Дорожный велосипед" width=342 height=503>
+          <img src="img/road-bike.webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x" alt="Дорожный велосипед" width=342 height=503>
           <p class="types-list__text types-list__text--road">Дорожный велосипед</p>
         </li>
         <li class="types-list__item types-list__item--mount">
-          <img src="img/mount-bike.jpg" alt="Горный велосипед" width=342 height=566>
+          <img src="img/mount-bike.webp" srcset="img/mount-bike.webp 1x, img/mount-bike@2x.webp 2x" alt="Горный велосипед" width=342 height=566>
           <p class="types-list__text types-list__text--mount">Горный велосипед</p>
         </li>
         <li class="types-list__item types-list__item--child">  
-          <img src="img/child-bike.jpg" alt="Детский велосипед" width=342 height=513>
+          <img src="img/child-bike.webp" srcset="img/child-bike.webp 1x, img/child-bike@2x.webp 2x" alt="Детский велосипед" width=342 height=513>
           <p class="types-list__text types-list__text--child">Детский велосипед</p>
         </li>
       </ul>
@@ -86,8 +86,8 @@
       <h2 class="video-title">Видео про велосипеды</h2>
       <p class="video-text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="video-video">
-        <img src="img/bike-video.jpg" alt="Bike Video" width="929" height="522">
-        <button class="video-video__button" name="button"></button>
+        <img src="img/bike-video.webp" srcset="img/bike-video.webp 1x, img/bike-video@2x.webp 2x" alt="Видео" width="929" height="522">
+        <button class="video-video__button" aria-label="Video"></button>
       </div>
       
     </section>
@@ -96,7 +96,7 @@
     <div class="container">
       <h1 class="page-footer__title">Как нас найти?</h1>
       <p class="page-footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <img class="page-footer__map" src="img/map.jpg" alt="Карта" width="957" height="530">
+      <img class="page-footer__map" src="img/map.webp" srcset="img/map.webp 1x, img/map@2x.webp 2x" alt="Карта" width="957" height="530">
       <div class="page-footer__contacts contacts">
         <a class="contacts-mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         <a class="contacts-tel" href="tel:+749978468446">+7 (499) -784-684-46</a>

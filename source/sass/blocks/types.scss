@@ -49,7 +49,7 @@
         position: absolute;
         width: 180px;
         height: 180px;
-        background: url("../../img/circle.svg");
+        background: url("../img/circle.svg");
         top: 157px;
         left: -9%;
         z-index: -1;
@@ -65,7 +65,7 @@
         position: absolute;
         width: 47px;
         height: 47px;
-        background: url("../../img/square.svg");
+        background: url("../img/square.svg");
     }
 
     &::before {
@@ -87,7 +87,7 @@
         position: absolute;
         width: 95px;
         height: 95px;
-        background: url("../../img/small-circle.svg");
+        background: url("../img/small-circle.svg");
         top: -32px;
         right: -11px;
 
@@ -136,7 +136,7 @@
         &::before {
             width: 127px;
             height: 127px;
-            background: url("../../img/circle-mob.svg");
+            background: url("../img/circle-mob.svg");
 
             top: 202px;
             left: -13px;
@@ -154,7 +154,7 @@
         &::before {
             width: 68px;
             height: 68px;
-            background: url("../../img/small-circle-mob.svg");
+            background: url("../img/small-circle-mob.svg");
 
             right: 0px;
             top: -19px;
