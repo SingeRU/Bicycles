@@ -23,13 +23,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
-
-
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
     position: relative;
     &::after {
         content: "";
@@ -57,7 +53,6 @@
     opacity: 0.7;
     text-align: center;
     text-decoration: none;
-    
 
     &:hover {
         transition: 0.3s;
@@ -96,7 +91,6 @@
         align-items: flex-start;
         flex-direction: column;
         background-color: $white;
-        
         width: 100%;
     }
 
@@ -192,8 +186,7 @@
     .page-header__toggle--nojs {
         display: none;
     }
-
-}  
+}
 
 @media (max-width: $tablet-width) {
     .page-header {

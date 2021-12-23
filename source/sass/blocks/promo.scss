@@ -73,7 +73,6 @@
 
     border-radius: 6px;
     border: 1px solid $grey;
-    
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -96,8 +95,7 @@
     font-size: 15px;
     line-height: 21px;
     color: $black;
-    
-    
+
     &:hover {
         transition: 0.3s;
         background-color: $green-blue-hover;
@@ -167,7 +165,7 @@
     .promo-form button {
         width: 41.7%;
     }
-}  
+}
 
 @media (max-width: $tablet-width) {
     .promo-subtitle img {

@@ -11,18 +11,13 @@ headerNavToggle.addEventListener('click', function () {
   } else {
     headerNavToggle.classList.add('page-header__toggle--closed');
   }
-  
-
   if (pageHeaderList.classList.contains('page-header__list--closed')) {
     pageHeaderList.classList.remove('page-header__list--closed');
     pageHeaderList.classList.add('page-header__list--opened');
-
   } else {
     pageHeaderList.classList.add('page-header__list--closed');
     pageHeaderList.classList.remove('page-header__list--opened');
-    
-  }
-});
+  }});
 
 window.addEventListener("keydown", (evt) => {
   if (evt.keyCode === 27) {
@@ -30,7 +25,6 @@ window.addEventListener("keydown", (evt) => {
       evt.preventDefault();
       pageHeaderList.classList.remove('page-header__list--opened');
     }
-
     if(headerNavToggle.classList.contains('page-header__toggle--closed')) {
       headerNavToggle.classList.remove('page-header__toggle--closed');
     } else {
